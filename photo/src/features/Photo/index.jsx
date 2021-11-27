@@ -8,7 +8,7 @@ Photo.propTypes = {};
 
 function Photo(props) {
   const match = useRouteMatch();
-  console.log({ match });
+  console.log( match.url, match.path, match.isExact);
 
   return (
     <Switch>

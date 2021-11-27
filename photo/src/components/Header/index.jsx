@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import { Col, Container, Row } from 'reactstrap';
 import './Header.scss';
 
@@ -11,14 +11,13 @@ function Header() {
       <Container>
         <Row className="justify-content-between">
           <Col xs="auto">
-            <a
+            <Link
               className="header__link header__title"
-              href="https://youtube.com/easyfrontend"
-              target="_blank"
-              rel="noopener noreferrer"
+              to="/photos"
+              style={{textDecoration: 'none'}}
             >
-              Easy Frontend
-            </a>
+              Kun's Blog
+            </Link>
           </Col>
 
           <Col xs="auto">
